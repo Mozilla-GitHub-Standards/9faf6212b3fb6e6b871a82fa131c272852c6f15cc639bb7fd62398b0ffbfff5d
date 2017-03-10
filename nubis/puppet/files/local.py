@@ -12,7 +12,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    #('Your Name', 'name@example.com'),
+    #('Daniel Hartnell', 'dhartnell@mozilla.com'),
 )
 MANAGERS = ADMINS
 
