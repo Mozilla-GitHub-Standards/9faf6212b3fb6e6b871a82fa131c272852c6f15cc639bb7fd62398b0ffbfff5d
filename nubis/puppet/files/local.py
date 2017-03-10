@@ -14,6 +14,9 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     #('Daniel Hartnell', 'dhartnell@mozilla.com'),
 )
+
+ALLOWED_HOSTS = '*'
+
 MANAGERS = ADMINS
 
 DATABASES = {
