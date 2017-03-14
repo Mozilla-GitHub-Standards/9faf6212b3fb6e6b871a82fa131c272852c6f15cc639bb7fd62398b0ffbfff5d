@@ -1,4 +1,6 @@
-variable "account" {}
+variable "account" {
+  default = "appsvcs-pastebin"
+}
 
 variable "region" {
   default = "us-west-2"
@@ -9,15 +11,13 @@ variable "environment" {
 }
 
 variable "service_name" {
-  default = "dpaste"
+  default = "appsvcs-pastebin"
 }
 
-variable "ami" {
-  default = ""
-}
+variable "ami" {}
 
 variable "nubis_sudo_groups" {
-  default = "nubis_global_admins,team_webops"
+  default = "team_webops,nubis_global_admins"
 }
 
 variable "nubis_user_groups" {
