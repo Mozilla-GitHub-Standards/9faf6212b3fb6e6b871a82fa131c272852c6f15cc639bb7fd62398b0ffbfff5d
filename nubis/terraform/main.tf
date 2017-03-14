@@ -19,8 +19,8 @@ module "worker" {
   #scale_down_load = 10
 
   # ldap group names
-  nubis_sudo_groups = "${var.nubis_sudo_groups}"
-  nubis_user_groups = "${var.nubis_user_groups}"
+  nubis_sudo_groups = "team_webops,nubis_global_admins"
+  nubis_user_groups = "team_webops"
 }
 
 module "load_balancer" {
