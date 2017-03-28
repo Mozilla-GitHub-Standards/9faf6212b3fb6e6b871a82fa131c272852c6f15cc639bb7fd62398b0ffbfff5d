@@ -59,5 +59,12 @@ apache::vhost { $::vhost_name:
     },
     wsgi_process_group          => 'wsgi',
     wsgi_script_aliases         => { '/' => $::wsgi_path },
+    
+    rewrites                    => [
+    {
+        comment      => 'HTTPS redirect',
+        rewrite_cond => ['%{HTTP:X-Forwarded-Proto} =http'],
+        rewrite_rule => ['. https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]'],
+    }
 }
 
