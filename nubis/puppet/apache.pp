@@ -59,7 +59,17 @@ apache::vhost { $::vhost_name:
     },
     wsgi_process_group          => 'wsgi',
     wsgi_script_aliases         => { '/' => $::wsgi_path },
-    
+
+    headers            => [
+      "set X-Nubis-Version ${project_version}",
+      "set X-Nubis-Project ${project_name}",
+      "set X-Nubis-Build   ${packer_build_name}",
+      "set X-Content-Type-Options 'nosniff'",
+      "set X-Frame-Options 'DENY'",
+      "set X-XSS-Protection '1; mode=block'",
+      "set Referrer-Policy 'strict-origin-when-cross-origin'",
+],    
+
     rewrites                    => [
     {
         comment      => 'HTTPS redirect',
