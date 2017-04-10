@@ -12,7 +12,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    #('Daniel Hartnell', 'dhartnell@mozilla.com'),
+    #('webops', 'noreply@mozilla.com'),
 )
 
 ALLOWED_HOSTS = '*'
@@ -32,3 +32,5 @@ DATABASES = {
 SECRET_KEY = nubis.APP_SECRET_KEY
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DPASTE_SLUG_LENGTH = 16
