@@ -68,6 +68,7 @@ apache::vhost { $::vhost_name:
       "set X-Frame-Options 'DENY'",
       "set X-XSS-Protection '1; mode=block'",
       "set Referrer-Policy 'strict-origin-when-cross-origin'",
+      "set Content-Security-Policy \"default-src 'none'; frame-ancestors 'none'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'\"",
 ],    
 
     rewrites                    => [
