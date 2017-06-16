@@ -69,7 +69,7 @@ apache::vhost { $::vhost_name:
       "set X-XSS-Protection '1; mode=block'",
       "set Referrer-Policy 'strict-origin-when-cross-origin'",
       "set Strict-Transport-Security 'max-age=31536000'",
-      "set Content-Security-Policy \"default-src 'none'; frame-ancestors 'none'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'unsafe-inline'\"",
+      "set Content-Security-Policy \"default-src 'none'; frame-ancestors 'none'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'\"",
 ],    
 
     rewrites                    => [
