@@ -8,7 +8,7 @@ except:
 import imp
 nubis = imp.load_source('nubis', '/etc/nubis-config/dpaste.sh')
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
