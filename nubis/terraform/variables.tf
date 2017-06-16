@@ -23,3 +23,7 @@ variable "nubis_sudo_groups" {
 variable "nubis_user_groups" {
   default = "team_webops"
 }
+
+variable "root_storage_size" {
+  default = "16"
+}
