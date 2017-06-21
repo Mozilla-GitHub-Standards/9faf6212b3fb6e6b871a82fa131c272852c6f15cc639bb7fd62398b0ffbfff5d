@@ -34,3 +34,4 @@ SECRET_KEY = nubis.APP_SECRET_KEY
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 DPASTE_SLUG_LENGTH = 16
+DPASTE_SITE_NAME = paste.mozilla.org
