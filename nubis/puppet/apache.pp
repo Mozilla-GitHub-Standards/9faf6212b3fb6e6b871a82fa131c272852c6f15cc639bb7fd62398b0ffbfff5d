@@ -59,6 +59,13 @@ apache::vhost { $::vhost_name:
     },
     wsgi_process_group          => 'wsgi',
     wsgi_script_aliases         => { '/' => $::wsgi_path },
+    
+    custom_fragment => '
+    <Location "/contribute.json">
+      SetHandler None
+      Require all granted
+    </Location>
+    Alias /robots.txt /var/www/dpaste/dpaste/contribute.json',
 
     headers            => [
       "set X-Nubis-Version ${project_version}",
