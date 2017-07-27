@@ -1,0 +1,17 @@
+{
+  "name": "paste.mozilla.org",
+  "description": "Using https://dpaste.de/ at Mozilla",
+  "repository": {
+    "url": "https://github.com/mozilla-it/pastebin-mozilla-org",
+    "license": "MPL2"
+  },
+  "bugs": {},
+  "urls": {
+    "prod": "https://paste.mozilla.org/",
+    "stage": "https://paste.allizom.org/"
+  },
+  "keywords": [
+    "python",
+    "django"
+  ]
+}
