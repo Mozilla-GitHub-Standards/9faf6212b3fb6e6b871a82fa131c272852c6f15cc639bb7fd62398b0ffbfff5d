@@ -35,6 +35,11 @@ file { '/var/www/dpaste/dpaste/settings/local.py':
   source => 'puppet:///nubis/files/local.py',
 }
 
+file { '/var/www/dpaste/dpaste/contribute.json':
+  ensure => present,
+  source => 'puppet:///nubis/files/contribute.json',
+}
+
 # Use Nubis's autoconfiguration hooks to trigger out config reloads
 
 include nubis_configuration
