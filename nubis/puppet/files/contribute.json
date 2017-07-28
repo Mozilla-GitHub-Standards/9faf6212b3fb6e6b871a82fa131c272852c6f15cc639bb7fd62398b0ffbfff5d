@@ -10,6 +10,13 @@
     "prod": "https://paste.mozilla.org/",
     "stage": "https://paste.allizom.org/"
   },
+  "participate": {
+    "irc": "irc://irc.mozilla.org/#webops",
+    "irc-contacts": [
+      "danielh",
+      "joeyk"
+    ]
+  },
   "keywords": [
     "python",
     "django"
