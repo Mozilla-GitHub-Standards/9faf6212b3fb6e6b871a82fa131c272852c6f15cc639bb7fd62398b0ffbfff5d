@@ -65,7 +65,7 @@ apache::vhost { $::vhost_name:
       SetHandler None
       Require all granted
     </Location>
-    Alias /robots.txt /var/www/dpaste/dpaste/contribute.json',
+    Alias /contribute.json /var/www/dpaste/dpaste/contribute.json',
 
     headers            => [
       "set X-Nubis-Version ${project_version}",
