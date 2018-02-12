@@ -4,7 +4,7 @@
       "type": "shell",
       "inline": [
         "sudo mkdir -p -m 755 /var/www/dpaste",
-        "sudo chown ubuntu:ubuntu /var/www/dpaste"
+        "sudo chown nubis:nubis /var/www/dpaste"
       ],
       "order": "1"
     },
