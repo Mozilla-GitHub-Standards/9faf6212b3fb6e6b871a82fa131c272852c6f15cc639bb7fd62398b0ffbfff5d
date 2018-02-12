@@ -17,10 +17,9 @@ file { '/usr/var':
   ensure => directory,
 }
 
-
 # Fix requrements.txt since 2.0 is out and not good for us
-python::pip { 'django':
-  ensure => '<2.0,>=1.11',
+python::pip { 'Django':
+  ensure => '1.11.10',
 }
 
 # pip install requirements
@@ -28,7 +27,7 @@ python::requirements { '/var/www/dpaste/requirements.txt':
   require => [
     Class['python'],
     Class['mysql::bindings'],
-    Python::Pip['django'],
+    Python::Pip['Django'],
   ]
 }
 
